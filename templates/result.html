@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Result</title>
+</head>
+<body>
+    <h1>Conversion Successful</h1>
+    <p>Original File:</p>
+    <img src="{{ original }}" alt="Original Image" width="300">
+    <p>Converted File:</p>
+    <img src="{{ converted }}" alt="Converted Image" width="300">
+    <br><br>
+    <a href="{{ url_for('download_file', filename=converted.split('/')[-1]) }}">Download Converted File</a>
+</body>
+</html>
